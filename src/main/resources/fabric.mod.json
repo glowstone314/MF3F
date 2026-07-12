@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "mf3f",
+  "version": "${version}",
+  "name": "Mining Fatigue 3 Fix",
+  "description": "Fix the mining speed multiplier for Mining Fatigue 3\\n修复挖掘疲劳3的挖掘速度乘数",
+  "authors": ["Glow_Creeper"],
+  "contact": {
+    "issues": "https://github.com/glowstone314/MF3F/issues",
+    "sources": "https://github.com/glowstone314/MF3F"
+  },
+  "license": "unlicense",
+  "icon": "assets/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "gc.mc.MF3F"
+    ]
+  },
+  "mixins": [
+    "mf3f.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "1.21.x"
+  }
+}
