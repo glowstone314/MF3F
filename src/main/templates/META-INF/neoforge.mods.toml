@@ -32,8 +32,8 @@ displayName = "${mod_name}" #mandatory
 authors = "${mod_authors}" #optional
 logoFile = "icon.png"
 # The description text for the mod (multi line!) (#mandatory)
-description = '''Fix the mining speed multiplier for Mining Fatigue 3
-修复挖掘疲劳3的挖掘速度乘数'''
+description = '''Fix destroy speed multiplier for Mining Fatigue 3 and higher
+修复挖掘疲劳3及更高的挖掘速度乘数'''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
 [[mixins]]
