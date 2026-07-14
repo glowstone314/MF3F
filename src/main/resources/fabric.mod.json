@@ -3,7 +3,7 @@
   "id": "mf3f",
   "version": "${version}",
   "name": "Mining Fatigue 3 Fix",
-  "description": "Fix the mining speed multiplier for Mining Fatigue 3\\n修复挖掘疲劳3的挖掘速度乘数",
+  "description": "Fix destroy speed multiplier for Mining Fatigue 3 and higher\\n修复挖掘疲劳3及更高的挖掘速度乘数",
   "authors": ["Glow_Creeper"],
   "contact": {
     "issues": "https://github.com/glowstone314/MF3F/issues",
