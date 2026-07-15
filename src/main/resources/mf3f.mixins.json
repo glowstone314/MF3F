@@ -4,7 +4,6 @@
   "package": "gc.mc.mf3f.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "PlayerMixin"
   ],
   "client": [
   ],
