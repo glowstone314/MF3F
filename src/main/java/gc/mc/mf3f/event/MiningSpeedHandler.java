@@ -12,7 +12,7 @@ public class MiningSpeedHandler {
 
     @SubscribeEvent
     public static void onBreakSpeed(PlayerEvent.BreakSpeed event) {
-        PlayerEntity player = event.getEntityPlayer();
+        PlayerEntity player = event.getPlayer();
         float speed = event.getOriginalSpeed();
 
         if (player.isPotionActive(Effects.MINING_FATIGUE)) {

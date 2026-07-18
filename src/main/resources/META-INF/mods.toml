@@ -6,7 +6,7 @@
 # The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
 modLoader="javafml" #mandatory
 # A version range to match for said mod loader - for regular FML @Mod it will be the forge version
-loaderVersion="[26,29)" #mandatory (26 is current forge version)
+loaderVersion="[29,32)" #mandatory (28 is current forge version)
 # A URL to refer people to when problems occur with this mod
 issueTrackerURL="https://github.com/glowstone314/MF3F/issues" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
@@ -15,7 +15,7 @@ issueTrackerURL="https://github.com/glowstone314/MF3F/issues" #optional
 modId="mf3f" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 version="3.0.0" #mandatory
- # A display name for the mod
+# A display name for the mod
 displayName="Mining Fatigue 3 Fix" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
 #updateJSONURL="http://myurl.me/" #optional
