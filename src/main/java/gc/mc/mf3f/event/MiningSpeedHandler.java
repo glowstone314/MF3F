@@ -1,8 +1,8 @@
 package gc.mc.mf3f.event;
 
 import gc.mc.mf3f.MF3F;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.potion.Effects;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -12,11 +12,11 @@ public class MiningSpeedHandler {
 
     @SubscribeEvent
     public static void onBreakSpeed(PlayerEvent.BreakSpeed event) {
-        PlayerEntity player = event.getPlayer();
+        Player player = event.getPlayer();
         float speed = event.getOriginalSpeed();
 
-        if (player.hasEffect(Effects.DIG_SLOWDOWN)) {
-            int amplifier = player.getEffect(Effects.DIG_SLOWDOWN).getAmplifier();
+        if (player.hasEffect(MobEffects.DIG_SLOWDOWN)) {
+            int amplifier = player.getEffect(MobEffects.DIG_SLOWDOWN).getAmplifier();
             if (amplifier == 2) {
                 speed /= 0.0027F;
                 speed *= 0.027F;
