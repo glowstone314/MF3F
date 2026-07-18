@@ -1,8 +1,8 @@
 package gc.mc.mf3f.event;
 
 import gc.mc.mf3f.MF3F;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.potion.Potion;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.potion.Effects;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -12,12 +12,11 @@ public class MiningSpeedHandler {
 
     @SubscribeEvent
     public static void onBreakSpeed(PlayerEvent.BreakSpeed event) {
-        EntityPlayer player = event.getEntityPlayer();
+        PlayerEntity player = event.getEntityPlayer();
         float speed = event.getOriginalSpeed();
 
-        Potion MINING_FATIGUE = Potion.getPotionById(4);
-        if (player.isPotionActive(MINING_FATIGUE)) {
-            int amplifier = player.getActivePotionEffect(MINING_FATIGUE).getAmplifier();
+        if (player.isPotionActive(Effects.MINING_FATIGUE)) {
+            int amplifier = player.getActivePotionEffect(Effects.MINING_FATIGUE).getAmplifier();
             if (amplifier == 2) {
                 speed /= 0.0027F;
                 speed *= 0.027F;
